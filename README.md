@@ -31,7 +31,8 @@ sudo chown -R pop-svc-user:pop-svc-user /opt/pop
 
 important Modify pop.service: Customize the parameters ```such as --ram, --max-disk, --SOL wallet address``` based on your preferences
 
-``` sudo tee /etc/systemd/system/pop.service << 'EOF'
+``` 
+sudo tee /etc/systemd/system/pop.service << 'EOF'
 [Unit]
 Description=Pipe POP Node Service
 After=network.target
